@@ -27,7 +27,25 @@ def list(my_songs)
 	end
 	
 	def play(my_songs)
-	 
+	puts "Please enter a song name:"
+  user_response = gets.chomp
+  my_songs.each { |song, location|
+    if user_response == song
+      system 'open ' + location
+    end
+      }
+  if user_response == "list"
+    list(my_songs)
+    play(my_songs)
+  else
+    puts "Invalid input, please try again:"
+    play(my_songs)
+  end
+end
+
+
+def exit_jukebox	
+  
 
 # def help
 #   #puts "Please enter a command:"
