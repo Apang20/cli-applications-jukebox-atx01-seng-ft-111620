@@ -26,44 +26,44 @@ def list(songs)
 end
 
 
-def play(songs)
-  puts "Please enter a song name or number:"
-  choice = gets.chomp
-  valid = false
-  songs.each_with_index do |song, index|
-    #binding.pry
-    if (choice.to_i - 1 == index)
-      puts "Playing #{songs[index]}"
-      valid = true
-    elsif (choice == song)
-      puts "Playing #{choice}"
-      valid = true
-    end
-  end
-  puts "Invalid input, please try again" if valid == false
-end
+# def play(songs)
+#   puts "Please enter a song name or number:"
+#   choice = gets.chomp
+#   valid = false
+#   songs.each_with_index do |song, index|
+#     #binding.pry
+#     if (choice.to_i - 1 == index)
+#       puts "Playing #{songs[index]}"
+#       valid = true
+#     elsif (choice == song)
+#       puts "Playing #{choice}"
+#       valid = true
+#     end
+#   end
+#   puts "Invalid input, please try again" if valid == false
+# end
 
 
-def exit_jukebox
-  puts "Goodbye"
-end
+# def exit_jukebox
+#   puts "Goodbye"
+# end
 
-def run(songs)
-  help
-  loop do
-    puts "Please enter a command:"
-    input = gets.chomp
-    case input
-    when 'play'
-      play(songs)
-    when 'help'
-      help
-    when 'list'
-      list(songs)
-    when 'exit'
-      #exit_jukebox
-      break
-    end
-  end
-  exit_jukebox
-end
+# def run(songs)
+#   help
+#   loop do
+#     puts "Please enter a command:"
+#     input = gets.chomp
+#     case input
+#     when 'play'
+#       play(songs)
+#     when 'help'
+#       help
+#     when 'list'
+#       list(songs)
+#     when 'exit'
+#       #exit_jukebox
+#       break
+#     end
+#   end
+#   exit_jukebox
+# end
