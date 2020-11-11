@@ -45,7 +45,10 @@ end
 
 
 def exit_jukebox	
-  
+ puts "Goodbye"
+end	
+
+
 
 # def help
 #   #puts "Please enter a command:"
