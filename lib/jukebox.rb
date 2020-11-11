@@ -29,7 +29,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  choice = gets.chomp
+  choice = gets.chomp #strip
   valid = false
   songs.each_with_index do |song, index|
     #binding.pry
@@ -55,10 +55,10 @@ def run(songs)
   loop do
     puts "Please enter a command:"
     input = gets.chomp
-    case input
+    case input #if input == "play"
     when 'play'
       play(songs)
-    when 'help'
+    when 'help' #else input == "help"
       help
     when 'list'
       list(songs)
