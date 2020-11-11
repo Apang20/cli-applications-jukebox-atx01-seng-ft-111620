@@ -26,7 +26,8 @@ def list(my_songs)
     }
 	end
 	
-	
+	def play(my_songs)
+	 
 
 # def help
 #   #puts "Please enter a command:"
