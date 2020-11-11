@@ -52,10 +52,9 @@ def exit_jukebox
 end
 
 def run(songs)
-  #help
+  help
   loop do
-    help
-    #puts "Please enter a command:"
+    puts "Please enter a command:"
     input = gets.chomp
     case input
     when 'play'
