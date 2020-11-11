@@ -21,11 +21,12 @@ def help
 end	
 
 def list(my_songs)
-
   my_songs.each { |song, location|
     puts song
     }
 	end
+	
+	
 
 # def help
 #   #puts "Please enter a command:"
