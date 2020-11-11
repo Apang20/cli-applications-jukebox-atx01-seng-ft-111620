@@ -52,7 +52,6 @@ def exit_jukebox
 end
 
 def run(songs)
-  #help
   loop do
     puts "Please enter a command:"
     input = gets.chomp
@@ -70,5 +69,4 @@ def run(songs)
       puts "Invalid entry"
     end
   end
-  #exit_jukebox
 end
