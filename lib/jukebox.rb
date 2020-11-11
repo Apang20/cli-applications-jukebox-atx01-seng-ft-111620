@@ -14,8 +14,8 @@ songs = [
 
 
 def help
-  #puts "Please enter a command:"
-  #puts "I accept the following commands:"
+  puts "Please enter a command:"
+  puts "I accept the following commands:"
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you choose a song to play"
@@ -52,9 +52,10 @@ def exit_jukebox
 end
 
 def run(songs)
-  help
+  #help
   loop do
-    puts "Please enter a command:"
+    help
+    #puts "Please enter a command:"
     input = gets.chomp
     case input
     when 'play'
