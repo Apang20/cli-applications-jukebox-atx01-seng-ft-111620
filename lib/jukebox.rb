@@ -32,7 +32,7 @@ def play(songs)
   choice = gets.chomp
   valid = false
   songs.each_with_index do |song, index|
-    #binding.pry
+    binding.pry
     if (choice.to_i - 1 == index)
       puts "Playing #{songs[index]}"
       valid = true
