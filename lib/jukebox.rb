@@ -54,7 +54,8 @@ end
 def run(songs)
   help
   loop do
-    puts "Please enter a command:"
+    #puts "Please enter a command:"
+    puts "I accept the following commands:"
     input = gets.chomp
     case input
     when 'play'
