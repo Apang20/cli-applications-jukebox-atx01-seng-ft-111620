@@ -73,7 +73,7 @@ def run(my_songs)
         user_response = gets.chomp
       end
     end
-
+end 
 
 # def help
 #   #puts "Please enter a command:"
